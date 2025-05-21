@@ -1,0 +1,103 @@
+/* Typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h5 {
+  font-weight: 600;
+}
+
+/* IPO Card Styling */
+.card {
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Text Colors */
+.text-primary {
+  color: #4B49AC !important;
+}
+
+.text-danger {
+  color: #FF4C60 !important;
+}
+
+/* Banner Box */
+.banner-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+/* Horizontal scroll for cards */
+.ipo-scroll {
+  overflow-x: auto;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ipo-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ipo-scroll::-webkit-scrollbar-thumb {
+  background: #cfd8dc;
+  border-radius: 10px;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .banner-box {
+    padding: 1.5rem;
+  }
+}
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+  border-bottom: 1px solid #333;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-mode .banner-box {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.dark-mode .btn-outline-primary {
+  color: #90caf9;
+  border-color: #90caf9;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #90caf9;
+  color: #121212;
+}
+
+.dark-mode .text-primary {
+  color: #90caf9 !important;
+}
+
+.dark-mode .text-danger {
+  color: #ff8a80 !important;
+}
